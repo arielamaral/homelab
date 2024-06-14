@@ -1,0 +1,6 @@
+services:
+  ansible:
+    image: williamyeh/ansible:alpine3
+    volumes:
+      - ./ansible:/etc/ansible
+    command: ["ansible-playbook", "/etc/ansible/site.yml"]

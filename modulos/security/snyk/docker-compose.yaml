@@ -1,0 +1,6 @@
+services:
+  snyk:
+    image: snyk/snyk-cli:latest
+    volumes:
+      - .:/project
+    command: ["snyk", "test", "/project"]
